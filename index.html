@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Converta números romanos em números decimais.">
+    <title>Conversor Romano</title>
+    <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="#" class="logo">ROMAN<span>O</span></a>
+        <span class="identificacao">DESAFIO 04</span>
+    </header>
+
+    <main class="container">
+        <section class="introducao">
+            <span class="etiqueta">MATEMATICA</span>
+            <h1>Do romano ao <span>decimal.</span></h1>
+            <p>
+                Transforme numeros romanos em números decimais
+                de forma simples e rapida.
+            </p>
+        </section>
+        <section class="conversor">
+            <div class="conversor-topo">
+                <div>
+                    <span class="subtitulo">FERRAMENTA DE CONVERSAO</span>
+                    <h2>Conversor de números</h2>
+                </div>
+                <div class="simbolo" aria-hidden="true">Ⅻ</div>
+            </div>
+
+            <form id="formulario">
+                <label for="numero">Digite um número romano ou inteiroo</label>
+
+                <input type="text" id="numero" name="numero" placeholder="Ex.: XIV ou 2026" autocomplete="off"
+                    maxlength="30" required>
+
+                <p class="ajuda">
+                    Exemplos: III, IX, XL,
+                </p>
+
+                <button type="submit" id="botaoConverter">
+                    Converter numero <span aria-hidden="true"></span>
+                </button>
+            </form>
+
+            <div id="resultado" class="resultado" aria-live="polite" hidden>
+                <span class="subtitulo">RESULTADO DA CONVERSÃO</span>
+                <p id="valorOriginal" class="valor-original"></p>
+                <div class="valor-final" id="valorFinal"></div>
+                <button type="button" id="botaoCopiar" class="botao-copiar">
+                    Copiar resultado
+                </button>
+            </div>
+
+            <p id="mensagem" class="mensagem" role="alert" hidden></p>
+        </section>
+
+        <section class="tabela">
+            <h2>Conheca os simbolos romanoss</h2>
+            <p>Estes sao os sete simbolos fundamentais.</p>
+
+            <div class="simbolos">
+                <div class="simbolo-card"><strong>I</strong><span>1</span></div>
+                <div class="simbolo-card"><strong>V</strong><span>5</span></div>
+                <div class="simbolo-card"><strong>X</strong><span>10</span></div>
+                <div class="simbolo-card"><strong>L</strong><span>50</span></div>
+                <div class="simbolo-card"><strong>C</strong><span>100</span></div>
+                <div class="simbolo-card"><strong>D</strong><span>500</span></div>
+                <div class="simbolo-card"><strong>M</strong><span>1000</span></div>
+            </div>
+
+            <div class="exemplo">
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+</body>
+
+</html>
